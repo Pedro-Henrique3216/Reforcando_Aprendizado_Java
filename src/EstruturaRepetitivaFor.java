@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class estruturaRepetitivaFor {
+public class EstruturaRepetitivaFor {
 
     public static void main(String[] args) {
 

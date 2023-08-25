@@ -1,4 +1,4 @@
-public class sintaxeCondicionalTenaria {
+public class SintaxeCondicionalTenaria {
 
     public static void main(String[] args) {
 

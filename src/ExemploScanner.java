@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exemploScanner {
+public class ExemploScanner {
 
     public static void main(String[] args) {
 

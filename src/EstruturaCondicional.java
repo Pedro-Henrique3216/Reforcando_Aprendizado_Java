@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-public class estruturaCondicional {
+public class EstruturaCondicional {
 
     public static void main(String[] args) {
 

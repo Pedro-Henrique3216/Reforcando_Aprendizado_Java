@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sintaxeOpicionalSwitchCase {
+public class SintaxeOpicionalSwitchCase {
 
 
     public static void main(String[] args) {
