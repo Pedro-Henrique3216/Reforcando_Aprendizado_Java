@@ -25,6 +25,15 @@ public class FuncoesParaString {
         System.out.println("index of 'bc': " + i);
         System.out.println("Last index of 'bc': " + j);
 
+        //split
+
+        String s = "potato aple lemon";
+
+        String [] vect = s.split(" ");
+
+        System.out.println(vect[0]);
+        System.out.println(vect[1]);
+        System.out.println(vect[2]);
 
     }
 }
