@@ -20,15 +20,10 @@ public class SintaxeFuncoes {
 
     public static int max(int a, int b, int c){
 
-        int maior;
-        if(a > b && a > c){
-            maior = a;
-        } else if(b > c){
-            maior = b;
-        } else {
-            maior = c;
-        }
+        int maiorEntre = Math.max(a, b);
+        int maior = Math.max(maiorEntre, c);
         return maior;
+
     }
 
     public static void showResult(int max){
