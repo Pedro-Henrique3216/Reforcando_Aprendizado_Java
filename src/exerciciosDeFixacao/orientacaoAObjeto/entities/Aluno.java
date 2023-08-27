@@ -13,7 +13,7 @@ public class Aluno {
     }
     public String verificaSePassou(){
         double minimoParaAprovar = 60;
-        if(notaFinal() > minimoParaAprovar){
+        if(notaFinal() >= minimoParaAprovar){
             return "Pass";
         } else {
             double missing = notaFinal() - minimoParaAprovar;
