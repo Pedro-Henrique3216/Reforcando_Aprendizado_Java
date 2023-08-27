@@ -20,7 +20,7 @@ public class e3 {
         aluno.nota2 = sc.nextDouble();
         aluno.nota3 = sc.nextDouble();
 
-        System.out.println(aluno.name + ", " + aluno.nota1 + ", " + aluno.nota2 + ", " + aluno.nota3);
+        System.out.println(aluno);
 
         sc.close();
 
