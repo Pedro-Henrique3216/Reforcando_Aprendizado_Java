@@ -23,20 +23,22 @@ public class Problema2ComOO {
         System.out.print("Quantity in stock: ");
         product.quantity = sc.nextInt();
 
-        System.out.printf("Product data: %s, $ %.2f, %d units, Total: $ %.2f%n",product.name, product.price,
-                product.quantity, product.totalValueInStock());
+        System.out.println();
+        System.out.println("Product data: " + product);
 
+        System.out.println();
         System.out.print("Enter the number of products to be added in stock: ");
         product.addProducts(sc.nextInt());
 
-        System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f%n",product.name, product.price,
-                product.quantity, product.totalValueInStock());
+        System.out.println();
+        System.out.println("Updated data: " + product);
 
+        System.out.println();
         System.out.print("Enter the number of products to be removed in stock: ");
         product.removeProducts(sc.nextInt());
 
-        System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f%n",product.name, product.price,
-                product.quantity, product.totalValueInStock());
+        System.out.println();
+        System.out.println("Updated data: " + product);
 
         sc.close();
     }

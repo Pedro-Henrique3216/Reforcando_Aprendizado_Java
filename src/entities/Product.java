@@ -20,4 +20,10 @@ public class Product {
         this.quantity -= quantity;
     }
 
+    @Override
+    public String toString(){
+        return this.name + ", $ " + String.format("%.2f", this.price) + " units, Total: $ "
+                + String.format("%.2f", totalValueInStock());
+    }
+
 }
