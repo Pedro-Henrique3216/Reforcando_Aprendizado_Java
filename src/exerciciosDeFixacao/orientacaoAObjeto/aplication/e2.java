@@ -20,9 +20,15 @@ public class e2 {
         System.out.print("Tax: ");
         employee.tax = sc.nextDouble();
 
+        System.out.println();
+        System.out.printf("Employee: %s%n", employee);
 
-        System.out.println(employee.name + ", " + employee.grossSalary + ", " + employee.tax);
+        System.out.println();
+        System.out.print("Which percentage to increase salary? ");
+        employee.increaseSalary(sc.nextDouble());
 
+        System.out.println();
+        System.out.println("Updated data: " + employee);
 
 
         sc.close();
