@@ -1,3 +1,5 @@
+package exemplosDeAula;
+
 import java.util.Scanner;
 
 public class EstruturaRepetitiva {

@@ -1,6 +1,6 @@
-package application;
+package exemplosDeAula.application;
 
-import entities.Product;
+import exemplosDeAula.entities.Product;
 
 import java.util.Locale;
 import java.util.Scanner;

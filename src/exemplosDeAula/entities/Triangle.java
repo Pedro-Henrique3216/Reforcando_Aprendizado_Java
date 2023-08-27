@@ -1,4 +1,4 @@
-package entities;
+package exemplosDeAula.entities;
 
 public class Triangle {
 

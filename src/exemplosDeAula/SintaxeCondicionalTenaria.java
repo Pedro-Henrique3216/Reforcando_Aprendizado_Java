@@ -1,3 +1,5 @@
+package exemplosDeAula;
+
 public class SintaxeCondicionalTenaria {
 
     public static void main(String[] args) {
