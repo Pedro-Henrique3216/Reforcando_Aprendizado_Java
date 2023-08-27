@@ -14,7 +14,7 @@ public class e1 {
 
         Rectangle rectangle = new Rectangle();
 
-
+        System.out.println("Enter rectangle width and height");
         rectangle.height = sc.nextDouble();
         rectangle.width = sc.nextDouble();
 
