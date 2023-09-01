@@ -14,8 +14,8 @@ public class e1 {
         double dolar = sc.nextDouble();
         System.out.print("How many dollars will be bought? ");
         double quanti = sc.nextDouble();
+        System.out.printf("Amount to be paid in reais = %.2f", CurrencyConverter.valorConvertido(dolar, quanti));
 
-
-
+        sc.close();
     }
 }
