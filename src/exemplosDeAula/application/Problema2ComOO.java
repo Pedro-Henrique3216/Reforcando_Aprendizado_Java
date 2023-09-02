@@ -23,6 +23,12 @@ public class Problema2ComOO {
 
         Product product = new Product(name, price, quantity);
 
+        product.setName("Computer");
+        System.out.println("Update name: " + product.getName());
+        product.setPrice(1200);
+        System.out.println("Update price: " + product.getPrice());
+        System.out.println("Check stock: " + product.getQuantity());
+
         System.out.println();
         System.out.println("Product data: " + product);
 
