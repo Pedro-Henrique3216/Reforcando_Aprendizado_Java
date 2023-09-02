@@ -12,16 +12,16 @@ public class Problema2ComOO {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Product product = new Product();
-
         System.out.println("Enter product data: ");
 
         System.out.print("Name: ");
-        product.name = sc.next();
+        String name = sc.next();
         System.out.print("Price: ");
-        product.price = sc.nextDouble();
+        double price = sc.nextDouble();
         System.out.print("Quantity in stock: ");
-        product.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
+
+        Product product = new Product(name, price, quantity);
 
         System.out.println();
         System.out.println("Product data: " + product);
