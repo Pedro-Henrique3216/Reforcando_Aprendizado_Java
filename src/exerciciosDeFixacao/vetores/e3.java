@@ -22,7 +22,6 @@ public class e3 {
 
             System.out.print("Nome: ");
             nomes[i] = sc.next();
-            sc.nextLine();
 
             System.out.print("Idade: ");
             idades[i] = sc.nextInt();
