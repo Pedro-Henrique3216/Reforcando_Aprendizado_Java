@@ -21,7 +21,7 @@ public class e3 {
             System.out.printf("Dados da %da pessoa: %n", i + 1);
 
             System.out.print("Nome: ");
-            nomes[i] = sc.nextLine();
+            nomes[i] = sc.next();
             sc.nextLine();
 
             System.out.print("Idade: ");
@@ -29,6 +29,32 @@ public class e3 {
 
             System.out.print("Altura: ");
             alturas[i] = sc.nextDouble();
+        }
+
+        double sum = 0;
+
+        for(int i = 0; i < alturas.length; i++){
+            sum += alturas[i];
+        }
+
+        System.out.println();
+        double alturaMedia = sum / quantidade;
+        System.out.printf("Altura media: %.2f%n", alturaMedia);
+
+        double quant = 0;
+        for(int i = 0; i < idades.length; i++){
+            if(idades[i] < 16){
+                quant += 1;
+            }
+        }
+
+        double porcentagem = quant * 100 / quantidade;
+        System.out.printf("Pessoas com menos de 16 anos: %.1f%% %n", porcentagem);
+
+        for(int i = 0; i < nomes.length; i++){
+            if(idades[i] < 16){
+                System.out.println(nomes[i]);
+            }
         }
 
         sc.close();
