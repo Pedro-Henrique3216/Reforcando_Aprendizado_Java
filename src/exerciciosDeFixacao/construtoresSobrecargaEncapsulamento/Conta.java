@@ -41,4 +41,13 @@ public class Conta {
         saldo -= valor - 5;
     }
 
+    @Override
+    public String toString(){
+        return "Account " + getNumeroDaConta()
+                + ", Holder: "
+                + getTitular()
+                + ", Balance: $ "
+                + String.format("%.2f", getSaldo());
+    }
+
 }
