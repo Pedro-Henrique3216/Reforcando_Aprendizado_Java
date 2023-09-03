@@ -13,14 +13,15 @@ public class e1 {
         System.out.print("Enter account number: ");
         int numero = sc.nextInt();
         System.out.print("Enter account holder: ");
+        sc.nextLine();
         String titular = sc.nextLine();
         System.out.print("Is there na initial deposit (y/n)? ");
-        String temOuNao = sc.next();
-        temOuNao = temOuNao.toLowerCase();
+        String response = sc.next();
+        response = response.toLowerCase();
 
         Conta conta;
 
-        if(temOuNao.equals("y")){
+        if(response.equals("y")){
             System.out.print("Enter initial deposit value: ");
             double deposito = sc.nextDouble();
             conta = new Conta(numero, titular, deposito);
@@ -44,10 +45,6 @@ public class e1 {
         System.out.println("Update account data:");
         System.out.println(conta);
 
-
-
-
-
-
+        sc.close();
     }
 }
