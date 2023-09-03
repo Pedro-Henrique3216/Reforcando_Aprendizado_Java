@@ -16,8 +16,7 @@ public class e1 {
         sc.nextLine();
         String titular = sc.nextLine();
         System.out.print("Is there na initial deposit (y/n)? ");
-        String response = sc.next();
-        response = response.toLowerCase();
+        String response = sc.next().toLowerCase();
 
         Conta conta;
 
