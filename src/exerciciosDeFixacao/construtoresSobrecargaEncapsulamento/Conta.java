@@ -38,7 +38,7 @@ public class Conta {
     }
 
     public void saque(double valor){
-        saldo -= valor - 5;
+        saldo -= (valor + 5);
     }
 
     @Override
