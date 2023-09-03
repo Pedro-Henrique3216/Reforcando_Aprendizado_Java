@@ -15,8 +15,16 @@ public class Vetores {
         double[] vect = new double[n];
 
         for(int i = 0; i < n; i++){
-            vect[i] = sc.nextInt();
+            vect[i] = sc.nextDouble();
         }
+
+        double sum = 0;
+        for(int i = 0; i < n; i++){
+            sum += vect[i];
+        }
+        double media = sum / n;
+
+        System.out.printf("AVERAGE HEIGHT %.2f%n", media);
 
         sc.close();
     }
