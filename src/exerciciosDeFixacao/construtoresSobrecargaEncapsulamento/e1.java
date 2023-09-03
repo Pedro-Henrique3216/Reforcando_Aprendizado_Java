@@ -11,7 +11,7 @@ public class e1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter account number: ");
-        String numero = sc.nextLine();
+        int numero = sc.nextInt();
         System.out.print("Enter account holder: ");
         String titular = sc.nextLine();
         System.out.print("Is there na initial deposit (y/n)? ");

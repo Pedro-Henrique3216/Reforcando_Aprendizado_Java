@@ -2,22 +2,22 @@ package exerciciosDeFixacao.construtoresSobrecargaEncapsulamento;
 
 public class Conta {
 
-    private String numeroDaConta;
+    private int numeroDaConta;
     private String titular;
     private double saldo;
 
-    public Conta(String numeroDaConta, String titular){
+    public Conta(int numeroDaConta, String titular){
         this.numeroDaConta = numeroDaConta;
         this.titular = titular;
     }
 
-    public Conta(String numeroDaConta, String titular, double saldo){
+    public Conta(int numeroDaConta, String titular, double saldo){
         this.numeroDaConta = numeroDaConta;
         this.titular = titular;
         this.saldo = saldo;
     }
 
-    public String getNumeroDaConta(){
+    public int getNumeroDaConta(){
         return numeroDaConta;
     }
 
