@@ -11,10 +11,10 @@ public class Conta {
         this.titular = titular;
     }
 
-    public Conta(int numeroDaConta, String titular, double saldo){
+    public Conta(int numeroDaConta, String titular, double depositoInicial){
         this.numeroDaConta = numeroDaConta;
         this.titular = titular;
-        this.saldo = saldo;
+        deposito(depositoInicial);
     }
 
     public int getNumeroDaConta(){
