@@ -18,16 +18,20 @@ public class e4 {
             numeros[i] = sc.nextInt();
         }
 
+        String numeroPares = "";
         int quantidadeDePares = 0;
-
-        System.out.println("Numeros pares: ");
 
         for(int i = 0; i < numeros.length; i++){
             if(numeros[i] % 2 == 0){
-                System.out.printf("%d  ", numeros[i]);
+                numeroPares += "  " + numeros[i];
                 quantidadeDePares++;
             }
         }
+
+        numeroPares = numeroPares.trim();
+
+        System.out.println("Numeros pares: ");
+        System.out.println(numeroPares);
 
         System.out.println();
         System.out.println("Quantidade de pares = " + quantidadeDePares);
