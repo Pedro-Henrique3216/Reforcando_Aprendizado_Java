@@ -22,16 +22,13 @@ public class e5 {
             numerosReais[i] = sc.nextDouble();
         }
 
-        double maiorValor = 0;
+        double maiorValor = numerosReais[0];
         int posicao = 0;
 
         for(int i = 1; i < numerosReais.length; i++){
-            if(numerosReais[i] > numerosReais[i - 1] && numerosReais[i] > maiorValor){
+            if(numerosReais[i] > maiorValor) {
                 maiorValor = numerosReais[i];
                 posicao = i;
-            } else if (numerosReais[i] < numerosReais[i - 1] && numerosReais[i - 1] > maiorValor) {
-                maiorValor = numerosReais[i - 1];
-                posicao = i - 1;
             }
         }
         System.out.println("Maior valor = " + maiorValor);
