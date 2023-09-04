@@ -24,10 +24,14 @@ public class e6 {
             vetorB[i] = sc.nextInt();
         }
 
+        int[] vectorC = new int[quantidade];
+        for(int i = 0; i < vectorC.length; i++) {
+            vectorC[i] = vetorA[i] + vetorB[i];
+        }
+
         System.out.println("Vetor resultante: ");
-        for(int i = 0; i < quantidade; i++){
-            int soma = vetorA[i] + vetorB[i];
-            System.out.println(soma);
+        for(int i = 0; i < vectorC.length; i++){
+            System.out.printf("%d%n", vectorC[i]);
         }
 
         sc.close();
