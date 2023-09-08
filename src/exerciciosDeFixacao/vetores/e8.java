@@ -11,7 +11,7 @@ public class e8 {
         System.out.print("Quantos elementos vai ter o vetor? ");
         int quantidade = sc.nextInt();
         double media;
-        int somaPares = 0;
+        int somaPares = 0, quantidadePares = 0;
 
         int[] numeros = new int[quantidade];
 
@@ -20,11 +20,12 @@ public class e8 {
             numeros[i] = sc.nextInt();
             if(numeros[i] % 2 == 0){
                 somaPares += numeros[i];
+                quantidadePares++;
             }
         }
 
         if(somaPares > 0){
-            media = (double) somaPares / quantidade;
+            media = (double) somaPares / quantidadePares;
             System.out.printf("Media dos pares = %.1f", media);
         } else {
             System.out.println("Nenhum numero par");
