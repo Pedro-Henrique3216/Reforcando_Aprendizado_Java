@@ -13,27 +13,28 @@ public class e11 {
         System.out.print("Quantas pessoas serao digitadas? ");
         int quantidade = sc.nextInt();
 
-        double[] altura = new double[quantidade];
-        char[] genero = new char[quantidade];
+        Pessoa[] pessoas = new Pessoa[quantidade];
 
-        for(int i = 0; i < quantidade; i++){
+        for(int i = 0; i < pessoas.length; i++){
             System.out.printf("Altura da %da pessoa: ", i + 1);
-            altura[i] = sc.nextDouble();
+            double altura = sc.nextDouble();
 
             System.out.printf("Genero da %da pessoa: ", i + 1);
-            genero[i] = sc.next().toUpperCase().charAt(0);
+            char genero = sc.next().toUpperCase().charAt(0);
+
+            pessoas[i] = new Pessoa(altura, genero);
         }
 
-        double menorAltura = altura[0];
-        double maiorAltura = altura[0];
+        double menorAltura = pessoas[0].getAltura();
+        double maiorAltura = pessoas[0].getAltura();
 
-        for(int i = 1; i < quantidade; i++){
-            if(menorAltura > altura[i]){
-                menorAltura = altura[i];
+        for(int i = 1; i < pessoas.length; i++){
+            if(menorAltura > pessoas[i].getAltura()){
+                menorAltura = pessoas[i].getAltura();
             }
 
-            if(maiorAltura < altura[i]){
-                maiorAltura = altura[i];
+            if(maiorAltura < pessoas[i].getAltura()){
+                maiorAltura = pessoas[i].getAltura();
             }
         }
 
@@ -41,9 +42,9 @@ public class e11 {
         double sum = 0;
 
         for(int i = 0; i < quantidade; i++){
-            if(genero[i] == 'F'){
+            if(pessoas[i].getGenero() == 'F'){
                 numeroMulheres++;
-                sum += altura[i];
+                sum += pessoas[i].getAltura();
             } else {
                 numeroHomens++;
             }
