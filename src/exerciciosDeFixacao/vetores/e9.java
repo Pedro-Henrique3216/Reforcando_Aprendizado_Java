@@ -11,31 +11,31 @@ public class e9 {
         System.out.print("Quantas pessoas voce vai digitar? ");
         int quantidade = sc.nextInt();
 
-        String[] nomes = new String[quantidade];
-        int[] idades = new int[quantidade];
+        Pessoa[] pessoas = new Pessoa[quantidade];
 
-        for(int i = 0; i < quantidade; i++){
+        for(int i = 0; i < pessoas.length; i++){
             System.out.printf("Dados da %da pessoa\n", i + 1);
 
             System.out.print("Nome: ");
-            nomes[i] = sc.next();
+            String nome = sc.next();
 
             System.out.print("Idade: ");
-            idades[i] = sc.nextInt();
+            int idade = sc.nextInt();
 
+            pessoas[i] = new Pessoa(nome, idade);
         }
 
-        int idadePessoasVelha = idades[0];
+        int idadePessoasVelha = pessoas[0].getIdade();
         int posicao = 0;
 
-        for(int i = 1; i < idades.length; i++){
-            if(idadePessoasVelha < idades[i]){
-                idadePessoasVelha = idades[i];
+        for(int i = 1; i < pessoas.length; i++){
+            if(idadePessoasVelha < pessoas[i].getIdade()){
+                idadePessoasVelha = pessoas[i].getIdade();
                 posicao = i;
             }
         }
 
-        System.out.println("Pessoa mais velha: " + nomes[posicao]);
+        System.out.println("Pessoa mais velha: " + pessoas[posicao].getNome());
         sc.close();
     }
 }
