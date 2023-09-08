@@ -12,25 +12,27 @@ public class e7 {
 
         System.out.print("Quantos elementos vai ter o vetor? ");
         int quantidade = sc.nextInt();
-        double media, soma = 0;
+        double media, soma;
 
         double[] numero = new double[quantidade];
 
         for(int i = 0; i < numero.length; i++){
             System.out.print("Digite um numero: ");
             numero[i] = sc.nextDouble();
-            soma += numero[i];
+        }
+        soma = 0;
+        for (int i = 0; i < numero.length; i++) {
+            soma = soma + numero[i];
         }
 
+        media = soma / quantidade;
 
-        media = soma / numero.length;
+        System.out.printf("\nMEDIA DO VETOR = %.3f\n", media);
+        System.out.println("ELEMENTOS ABAIXO DA MEDIA:");
 
-        System.out.printf("%nMedia do Vetor = %.3f%n", media);
-
-        System.out.println("Elementos abaixo da media: ");
-        for(int i = 0; i < numero.length; i++){
-            if(numero[i] < media){
-                System.out.println(numero[i]);
+        for (int i = 0; i < numero.length; i++) {
+            if (numero[i] < media) {
+                System.out.printf("%.1f\n", numero[i]);
             }
         }
 
