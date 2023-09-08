@@ -1,6 +1,5 @@
 package exerciciosDeFixacao.vetores;
 
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -23,7 +22,7 @@ public class e10 {
             sc.nextLine();
             alunos[i] = sc.nextLine();
             pSemestre[i] = sc.nextDouble();
-            sSemestre[i] = sc.nextDouble();;
+            sSemestre[i] = sc.nextDouble();
         }
 
         System.out.println("Alunos aprovados");
