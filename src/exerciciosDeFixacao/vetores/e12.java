@@ -11,25 +11,27 @@ public class e12 {
         System.out.print("How many rooms will be rented? ");
         int quantidade = sc.nextInt();
 
-        String[] names = new String[10];
-        String[] emails = new String[10];
+        Pensionamento[] pensionamento = new Pensionamento[10];
 
         for(int i = 0; i < quantidade; i++){
+            System.out.println();
             System.out.printf("Rent #%d\n", i + 1);
+            System.out.print("Nome: ");
             sc.nextLine();
             String nome = sc.nextLine();
+            System.out.print("Email: ");
             String email = sc.next();
+            System.out.print("Room: ");
             int room = sc.nextInt();
 
-            names[room] = nome;
-            emails[room] = email;
-
+            pensionamento[room] = new Pensionamento(nome, email);
 
         }
 
+        System.out.println();
         System.out.println("Busy rooms: ");
         for(int i = 0; i < 10; i++){
-            if (names[i] != null) System.out.println(i + ": " + names[i] + ", " + emails[i]);
+            if (pensionamento[i] != null) System.out.println(i + ": " + pensionamento[i]);
         }
 
 
