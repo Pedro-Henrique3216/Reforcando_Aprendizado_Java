@@ -2,8 +2,10 @@ package exerciciosDeFixacao.list.aplications;
 
 import exerciciosDeFixacao.list.entities.Funcionario;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class e1 {
 
@@ -22,6 +24,10 @@ public class e1 {
             System.out.printf("Emplyoee #%d\n", i + 1);
             System.out.print("Id: ");
             Long id = sc.nextLong();
+            while(hasId(list, id)){
+                System.out.println("ID already taken! Try again: ");
+                id = sc.nextLong();
+            }
             System.out.print("Name: ");
             sc.nextLine();
             String name = sc.nextLine();
@@ -41,10 +47,7 @@ public class e1 {
         else{
             System.out.print("Enter the percentage: ");
             double porcentagem = sc.nextDouble();
-            porcentagem /= 100;
-
-            double novoSalary = funcionario.getSalary() + funcionario.getSalary() * porcentagem;
-            funcionario.setSalary(novoSalary);
+            funcionario.increaseSalary(porcentagem);
         }
 
         System.out.println();
@@ -55,5 +58,12 @@ public class e1 {
         }
 
         sc.close();
+    }
+
+    private static boolean hasId(List<Funcionario> list, Long id) {
+
+        Funcionario funcionario = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return funcionario != null;
+
     }
 }
