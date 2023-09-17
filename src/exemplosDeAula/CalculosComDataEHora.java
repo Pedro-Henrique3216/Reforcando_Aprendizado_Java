@@ -42,7 +42,7 @@ public class CalculosComDataEHora {
 
         System.out.println("t1 dias = " + t1.toDays());
         System.out.println("t12 dias = " + t12.toDays());
-        System.out.println("t2 dias= " + t1.toDays());
+        System.out.println("t2 dias= " + t2.toDays());
         System.out.println("t4 dias = " + t3.toDays());
 
 
