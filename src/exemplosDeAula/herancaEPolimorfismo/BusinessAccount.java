@@ -1,4 +1,4 @@
-package exemplosDeAula.heranca;
+package exemplosDeAula.herancaEPolimorfismo;
 
 public class BusinessAccount extends Account{
 
