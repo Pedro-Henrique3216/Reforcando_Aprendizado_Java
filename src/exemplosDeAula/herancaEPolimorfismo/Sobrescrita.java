@@ -1,6 +1,6 @@
 package exemplosDeAula.herancaEPolimorfismo;
 
-public class Program2 {
+public class Sobrescrita {
 
     public static void main(String[] args) {
 
