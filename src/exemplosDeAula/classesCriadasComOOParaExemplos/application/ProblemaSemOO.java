@@ -1,31 +1,31 @@
-package exemplosDeAula.application;
-
-import exemplosDeAula.entities.Triangle;
+package exemplosDeAula.classesCriadasComOOParaExemplos.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ProblemaComOO {
+public class ProblemaSemOO {
 
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Triangle x = new Triangle();
-        Triangle y = new Triangle();
+        double xA, xB, xC, yA, yB, yC;
 
         System.out.println("Enter the measures of triangle X: ");
-        x.a = sc.nextDouble();
-        x.b = sc.nextDouble();
-        x.c = sc.nextDouble();
+        xA = sc.nextDouble();
+        xB = sc.nextDouble();
+        xC = sc.nextDouble();
         System.out.println("Enter the measures of triangle Y: ");
-        y.a = sc.nextDouble();
-        y.b = sc.nextDouble();
-        y.c = sc.nextDouble();
+        yA = sc.nextDouble();
+        yB = sc.nextDouble();
+        yC = sc.nextDouble();
 
-        double areaX = x.areaTriangulo();
-        double areaY = y.areaTriangulo();
+        double p = (xA + xB + xC) / 2;
+        double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
+
+        p = (yA + yB + yC) / 2;
+        double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
@@ -39,4 +39,6 @@ public class ProblemaComOO {
         sc.close();
 
     }
+
+
 }

@@ -1,6 +1,6 @@
 package exemplosDeAula;
 
-import exemplosDeAula.entities.Product;
+import exemplosDeAula.classesCriadasComOOParaExemplos.entities.Product;
 
 import java.util.Locale;
 import java.util.Scanner;

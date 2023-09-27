@@ -1,4 +1,4 @@
-package exemplosDeAula.entities.enums;
+package exemplosDeAula.classesCriadasComOOParaExemplos.entities.enums;
 
 public enum OrderStatus {
 

@@ -1,4 +1,4 @@
-package exemplosDeAula.entities;
+package exemplosDeAula.classesCriadasComOOParaExemplos.entities;
 
 public class Triangle {
 

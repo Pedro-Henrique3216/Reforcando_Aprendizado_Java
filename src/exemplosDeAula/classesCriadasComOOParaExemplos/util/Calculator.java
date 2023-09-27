@@ -1,4 +1,4 @@
-package exemplosDeAula.util;
+package exemplosDeAula.classesCriadasComOOParaExemplos.util;
 
 public class Calculator {
 

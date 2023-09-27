@@ -1,6 +1,6 @@
 package exemplosDeAula;
 
-import exemplosDeAula.util.Calculator;
+import exemplosDeAula.classesCriadasComOOParaExemplos.util.Calculator;
 
 import java.util.Locale;
 import java.util.Scanner;

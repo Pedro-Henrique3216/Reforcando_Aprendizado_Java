@@ -1,7 +1,7 @@
 package exemplosDeAula;
 
-import exemplosDeAula.entities.Order;
-import exemplosDeAula.entities.enums.OrderStatus;
+import exemplosDeAula.classesCriadasComOOParaExemplos.entities.Order;
+import exemplosDeAula.classesCriadasComOOParaExemplos.entities.enums.OrderStatus;
 
 import java.util.Date;
 
