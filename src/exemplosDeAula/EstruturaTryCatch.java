@@ -7,6 +7,19 @@ public class EstruturaTryCatch {
 
     public static void main(String[] args) {
 
+        method1();
+
+        System.out.println("End of program");
+    }
+
+    public static void method1(){
+        System.out.println("***Method1 START***");
+        method2();
+        System.out.println("***Method2 END***");
+    }
+    public static void method2() {
+
+        System.out.println("***Method2 START***");
         Scanner sc = new Scanner(System.in);
 
         try {
@@ -16,13 +29,14 @@ public class EstruturaTryCatch {
         }
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Invalid positon!");
+            e.printStackTrace();
+            sc.next();
         }
         catch (InputMismatchException e){
             System.out.println("Input error");
         }
 
-
-        System.out.println("End of program");
         sc.close();
+        System.out.println("***Method2 END***");
     }
 }
