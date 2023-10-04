@@ -1,5 +1,6 @@
 package projetoChess_System.applications;
 
+import projetoChess_System.chess.ChessMatch;
 import projetoChess_System.chess.ChessPiece;
 import projetoChess_System.chess.ChessPosition;
 import projetoChess_System.chess.Color;
@@ -48,6 +49,13 @@ public class UI {
         }
     }
 
+    public static void printMatch(ChessMatch match){
+        printBoard(match.getPieces());
+        System.out.println();
+        System.out.println("Turn: " + match.getTurn());
+        System.out.println("Waiting player: " + match.getCurrentPlayer());
+    }
+
     public static void printBoard(ChessPiece[][] pieces){
         for(int i = 0; i < pieces.length; i++){
             System.out.print((8 - i) + " ");
@@ -86,4 +94,5 @@ public class UI {
         }
         System.out.print(" ");
     }
+
 }
