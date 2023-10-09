@@ -94,6 +94,7 @@ public class ChessMatch {
             }
             if(movedPiece.getColor() == Color.BLACK && target.getRow() == 7){
                 promoted = (ChessPiece) board.piece(target);
+                promoted = replacePromotedpiece("Q");
             }
         }
 
