@@ -4,42 +4,59 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class e1 {
 
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
-        List<String> list = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
 
-        try (BufferedReader br = new BufferedReader(new FileReader("c:\\temp\\sourceFile.csv"))){
+        List<Product> products = new ArrayList<>();
 
-            String line = br.readLine();
+        System.out.println("Enter file path: ");
+        String sourceFileStr = sc.nextLine();
 
-            while (line != null){
-                String[] arr = line.split(",");
-                double valorTotal = Double.parseDouble(arr[1]) * Double.parseDouble(arr[2]);
-                list.add(arr[0] + String.format(",%.2f", valorTotal));
-                line = br.readLine();
+        File sourceFile = new File(sourceFileStr);
+        String sourceFolderStr = sourceFile.getParent();
+
+        String targetFileStr = sourceFolderStr + "\\out\\summary.csv";
+
+        boolean success = new File(sourceFolderStr + "\\out").mkdir();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFile))){
+
+            String itemCsv = br.readLine();
+
+            while (itemCsv != null){
+                String[] arr = itemCsv.split(",");
+                String name = arr[0];
+                double price = Double.parseDouble(arr[1]);
+                int quantity = Integer.parseInt(arr[2]);
+
+                products.add(new Product(name, price, quantity));
+
+                itemCsv = br.readLine();
+            }
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(targetFileStr))){
+
+                for(Product product : products){
+                    bw.write(product.toString());
+                    bw.newLine();
+                }
+
+                System.out.println(targetFileStr + " CREATED");
+
+            } catch (IOException e){
+                System.out.println("Error writing file: " + e.getMessage());
             }
 
         } catch (IOException e){
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error writing file: " + e.getMessage());
         }
 
-        String strPath = "c:\\temp";
-        boolean newFile = new File(strPath + "\\out").mkdir();
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(strPath + "\\out\\summary.csv"))){
-
-            for(String product : list){
-                bw.write(product);
-                bw.newLine();
-            }
-
-        } catch (IOException e){
-            e.printStackTrace();
-        }
 
     }
 }
