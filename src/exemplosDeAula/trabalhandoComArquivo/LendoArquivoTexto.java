@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.trabalhandoComArquivo;
 
 import java.io.File;
 import java.io.IOException;
