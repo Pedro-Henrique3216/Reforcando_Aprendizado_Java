@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.estruturaCondicional;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;

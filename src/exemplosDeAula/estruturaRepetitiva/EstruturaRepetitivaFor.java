@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.estruturaRepetitiva;
 
 import java.util.Scanner;
 

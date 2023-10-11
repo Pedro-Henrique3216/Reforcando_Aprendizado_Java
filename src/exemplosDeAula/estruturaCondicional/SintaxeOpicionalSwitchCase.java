@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.estruturaCondicional;
 
 import java.util.Scanner;
 

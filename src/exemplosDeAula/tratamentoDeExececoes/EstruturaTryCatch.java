@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.tratamentoDeExececoes;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

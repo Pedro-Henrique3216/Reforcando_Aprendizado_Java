@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.estruturaRepetitiva;
 
 public class LacoForEach {
 

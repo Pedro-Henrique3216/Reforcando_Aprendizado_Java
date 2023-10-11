@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.manipulandoDataHora;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

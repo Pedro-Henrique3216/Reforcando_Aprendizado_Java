@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.tratamentoDeExececoes;
 
 import java.io.File;
 import java.io.FileNotFoundException;

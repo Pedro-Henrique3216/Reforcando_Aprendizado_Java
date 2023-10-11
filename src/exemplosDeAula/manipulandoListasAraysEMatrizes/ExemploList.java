@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.manipulandoListasAraysEMatrizes;
 
 import java.util.ArrayList;
 import java.util.List;

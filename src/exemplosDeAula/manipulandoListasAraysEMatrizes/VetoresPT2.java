@@ -1,4 +1,4 @@
-package exemplosDeAula;
+package exemplosDeAula.manipulandoListasAraysEMatrizes;
 
 import exemplosDeAula.classesCriadasComOOParaExemplos.entities.Product;
 
