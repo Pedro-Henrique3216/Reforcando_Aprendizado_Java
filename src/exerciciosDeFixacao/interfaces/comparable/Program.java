@@ -10,18 +10,21 @@ import java.util.List;
 public class Program {
 
     public static void main(String[] args){
-        List<String> list = new ArrayList<>();
-        String path = "c:\\temp\\in.txt";
+        List<Employee> list = new ArrayList<>();
+        String path = "c:\\temp\\in.csv";
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
-            String name = br.readLine();
-            while (name != null){
-                list.add(name);
-                name = br.readLine();
+            String employeeCsv = br.readLine();
+            while (employeeCsv != null){
+                String[] fields = employeeCsv.split(",");
+                String name = fields[0];
+                double salary = Double.parseDouble(fields[1]);
+                list.add(new Employee(name, salary));
+                employeeCsv = br.readLine();
             }
             Collections.sort(list);
-            for(String s : list){
-                System.out.println(s);
+            for(Employee e : list){
+                System.out.println(e);
             }
         } catch (IOException e){
             System.out.println("Error: " + e.getMessage());
