@@ -1,4 +1,4 @@
-package exemplosDeAula.genericSetEMap.entities;
+package exemplosDeAula.generics.entities;
 
 public class Product implements Comparable<Product> {
 

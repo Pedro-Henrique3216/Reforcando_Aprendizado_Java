@@ -1,6 +1,6 @@
-package exemplosDeAula.genericSetEMap.application;
+package exemplosDeAula.generics.application;
 
-import exemplosDeAula.genericSetEMap.services.PrintService;
+import exemplosDeAula.generics.services.PrintService;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
-package exemplosDeAula.genericSetEMap.application;
+package exemplosDeAula.generics.application;
 
-import exemplosDeAula.genericSetEMap.entities.Product;
-import exemplosDeAula.genericSetEMap.services.CalculationService;
+import exemplosDeAula.generics.entities.Product;
+import exemplosDeAula.generics.services.CalculationService;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
