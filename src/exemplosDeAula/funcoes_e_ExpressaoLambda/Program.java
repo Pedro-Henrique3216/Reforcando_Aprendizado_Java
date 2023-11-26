@@ -1,5 +1,7 @@
 package exemplosDeAula.funcoes_e_ExpressaoLambda;
 
+import exemplosDeAula.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 

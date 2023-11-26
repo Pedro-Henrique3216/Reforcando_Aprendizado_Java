@@ -1,5 +1,7 @@
 package exemplosDeAula.comparator;
 
+import exemplosDeAula.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 

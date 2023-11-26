@@ -1,24 +1,13 @@
 package exerciciosDeFixacao.herancaEPolimorfismo.entities;
 
-public class Product {
+public class Product extends exemplosDeAula.Product {
 
-    private String name;
-    private Double price;
     public Product(String name, Double price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Double getPrice() {
-        return price;
+        super(name, price);
     }
 
     public String priceTag(){
-        return name + " $ " + String.format("%.2f", price);
+        return getName() + " $ " + String.format("%.2f", getPrice());
     }
 
 }

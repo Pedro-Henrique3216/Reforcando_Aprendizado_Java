@@ -1,5 +1,7 @@
 package exemplosDeAula.comparator;
 
+import exemplosDeAula.Product;
+
 import java.util.Comparator;
 
 public class MyComparator implements Comparator<Product> {

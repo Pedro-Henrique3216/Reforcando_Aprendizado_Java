@@ -1,22 +1,14 @@
 package exemplosDeAula.generics.entities;
 
-public class Product implements Comparable<Product> {
-
-    private String name;
-    private Double price;
+public class Product extends exemplosDeAula.Product implements Comparable<Product> {
 
     public Product(String name, Double price) {
-        this.name = name;
-        this.price = price;
+        super(name, price);
     }
 
     @Override
     public int compareTo(Product product) {
-        return price.compareTo(product.price);
+        return getPrice().compareTo(product.getPrice());
     }
 
-    @Override
-    public String toString() {
-        return  name + ", " + String.format("%.2f", price);
-    }
 }
