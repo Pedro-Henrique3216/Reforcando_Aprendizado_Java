@@ -1,4 +1,4 @@
-package exemplosDeAula.function;
+package exemplosDeAula.funcoes_e_ExpressaoLambda;
 
 import exemplosDeAula.Product;
 
